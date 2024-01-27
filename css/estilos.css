@@ -1,9 +1,13 @@
-* { margin: 0px; padding: 0px; }
+* { 
+    margin: 0px; 
+    padding: 0px; 
+}
 
-#contenedor {
+div#contenedor {
     background-color: #fff8f0;
     font-family: 'Times New Roman', serif;
     font-size: 16px;
+    position: relative; 
 }
 
 div.encabezado {
@@ -27,7 +31,7 @@ div.encabezado {
     font-size: 18px;
     transition: background-color 0.3s ease;
     text-align: center; 
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .menu ul {
@@ -68,10 +72,12 @@ div.encabezado {
 }
 
 
-.contenido {
+div.contenido {
     background-color: #fff8f0;
     color: #5a3e36;
     font-family: 'Georgia', serif;
+    float: left;
+    width: 70%;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -81,8 +87,12 @@ div.encabezado {
     color: #5a3e36;
     font-family: 'Georgia', serif;
     font-size: 18px;
+    float: right;
+    width: 30%;
+    
     
 }
+
 
 div.pie {
     background-color: #5a3e36;
@@ -106,6 +116,12 @@ div.pie {
     .menu li a {
         border-bottom: none;
 
+    }
+
+    div.contenido {
+        width: 100%;
+        margin-left: 0;
+        border-right: none;
     }
 }
 
