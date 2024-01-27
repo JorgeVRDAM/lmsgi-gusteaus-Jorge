@@ -6,16 +6,16 @@
     font-size: 16px;
 }
 
-.encabezado {
+div.encabezado {
     background-image:url("../imgs/guesteaus.png"); 
     background-size: cover;
     background-position: 80% 180%;
     color: #5a3e36;
     font-family: 'Georgia', serif;
-    font-size: 60px;
+    font-size: 36px;
     text-align: center;
-    line-height: 2; 
-    height: 130px;
+    line-height: 3; 
+    height: 100px;
     padding: 50px 0; 
     margin: 0;
 }
@@ -29,6 +29,28 @@
     text-align: center; 
     margin-bottom: 20px;
 }
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.menu li {
+    display: inline-block; 
+}
+
+.menu li a {
+    display: block;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
 
 .menu ul li a {
     display: inline-block; 
@@ -57,11 +79,13 @@
     
 }
 
-.pie {
-    background-color: #a77e58;
-    color: #ffffff;
+div.pie {
+    background-color: #5a3e36;
+    color: #ecdcc6;
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     text-align: center;
 
 }
+
+
