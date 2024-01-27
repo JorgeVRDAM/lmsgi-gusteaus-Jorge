@@ -24,7 +24,7 @@ div.encabezado {
     background-color: #a77e58;
     color: #ffffff;
     font-family: 'Helvetica', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
     text-align: center; 
     margin-bottom: 20px;
@@ -49,6 +49,8 @@ div.encabezado {
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s ease; 
 }
 
 
@@ -59,9 +61,12 @@ div.encabezado {
     color: #ffffff;
 }
 
-.menu:hover {
-    background-color: #8b6f47;
+.menu li a:hover,
+.menu li.active a {
+    background-color: #8b6f47; 
+    border-bottom: 2px solid #ffffff; 
 }
+
 
 .contenido {
     background-color: #fff8f0;
@@ -86,6 +91,22 @@ div.pie {
     font-size: 16px;
     text-align: center;
 
+}
+
+@media screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu li {
+        display: block;
+    }
+
+    .menu li a {
+        border-bottom: none;
+
+    }
 }
 
 
