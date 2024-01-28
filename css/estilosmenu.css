@@ -1,0 +1,148 @@
+* { 
+    margin: 0px; 
+    padding: 0px; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #a77e58;
+    color: #5a3e36;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu {
+    background-color: #a77e58;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+    margin-bottom: 0px;
+}
+
+.menu-estrella h2 {
+    color: #a77e58;
+    text-align: center;
+}
+
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.menu li {
+    display: inline-block; 
+}
+
+.menu li a {
+    display: block;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s ease; 
+}
+
+
+.menu ul li a {
+    display: inline-block; 
+    margin: 0 10px; 
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu li a:hover,
+.menu li.active a {
+    background-color: #8b6f47; 
+    border-bottom: 2px solid #ffffff; 
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.menu-estrella {
+    border-top: 2px solid #5a3e36;
+    border-bottom: 2px solid #5a3e36;
+    padding: 20px 0;
+    background-color: #fff8f0;
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-estrella ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-estrella li {
+    text-align: center;
+    color: #fff8f0;
+}
+
+.menu-estrella li:hover {
+    background-color: #a77e58;
+    color: #fff8f0;
+    cursor: pointer; /* Agregado para indicar que el elemento es interactivo */
+}
+
+
+h2 {
+    color: #a77e58;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #5a3e36;
+    background-color: #8b6f47;
+}
+
+li[data-alergenos~="nueces"] {
+    background-color: #8b6f47;
+}
+
+li[data-alergenos~="mariscos"] {
+    background-color: #8b6f47;
+}
+
+li:hover {
+    background-color: #8b6f47;
+}
+
+div.pie {
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

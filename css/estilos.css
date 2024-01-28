@@ -24,6 +24,7 @@ div.encabezado {
     margin: 0;
 }
 
+
 .menu {
     background-color: #a77e58;
     color: #ffffff;
@@ -93,14 +94,17 @@ div.contenido {
     
 }
 
-
 div.pie {
     background-color: #5a3e36;
     color: #ecdcc6;
     font-family: 'Helvetica', sans-serif;
     font-size: 16px;
     text-align: center;
-
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 label {
